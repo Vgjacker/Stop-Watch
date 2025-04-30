@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 0 0 15px #00ffcc;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #1f1f2e;
+  color: #00ffcc;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,255,204,0.2);
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #00ffcc;
+  color: #1f1f2e;
+}
+
+.laps {
+  margin-top: 30px;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.laps h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+#lapList {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+#lapList li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #ccfffd;
+}
